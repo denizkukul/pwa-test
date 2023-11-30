@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+    margin: auto;
+    max-width: 1200px;
+    background: #ddd;
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 30px 0 20px;
+}
+
+.blog-list {
+    padding: 20px;
+    background: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-container {
+    box-sizing: border-box;
+    flex: 1 0 50%;
+    min-height: 300px;
+    padding: 10px;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog {
+    border-radius: 20px;
+    flex: 1;
+    height: 100%;
+    background-color: #eee;
+}
+
+@media screen and (max-width:900px) {
+    .blog-container {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+}
